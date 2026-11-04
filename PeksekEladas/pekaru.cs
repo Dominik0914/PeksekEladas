@@ -16,5 +16,9 @@ namespace PeksekEladas
             Egysegar = int.Parse(darabol[1]);
             EladottDb= int.Parse(darabol[2]);
         }
+        public override string ToString()
+        {
+            return $"{Nev}: {EladottDb} db ({Egysegar} Ft/db) - Bevétel: {EladottDb*Egysegar} Ft";
+        }
     }
 }
